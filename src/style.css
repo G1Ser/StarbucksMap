@@ -1,0 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  width: 100vw;
+  max-width: 45vw;
+  margin: auto;
+}
