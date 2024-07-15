@@ -8,7 +8,7 @@ export const useGaoDeStore = defineStore('GaoDe', () => {
     const city_list = ref([]);
     //访问的城市列表
     const visit_city = ref([]);
-    const key = ref('66a865570fd1e4a0c42f5a173ec8d7d9')
+    const key = ref('<Your Key>')
     const cityInfo = ref(null)
     const LocalCity = ref(null)
     const LocalWeatherInfo = ref({ weather: '', temperature: '', winddirection: '', windpower: '' })
