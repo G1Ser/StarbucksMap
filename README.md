@@ -1,7 +1,23 @@
-# Vue 3 + Vite
+# StarbucksMap
+##### 这是一个基于 Vue 3 框架的项目，结合了高德地图 API 和 Element Plus 组件库，并使用了 OpenLayers 技术和后端的 PostGIS 数据库。该项目旨在提供一个星巴克地图应用，用户可以查看城市中星巴克门店的数量，并提供打卡和导航功能。希望这个项目对你有所帮助！
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+###### 项目配置
+去高德地图申请两个密钥，其中一个Web服务密钥，另一个是Web端密钥。
+```
+// index.html 11行 设置你Web端密钥对应的安全密钥
+securityJsCode: '<Your SecurityJsCode>'
+// index.html 15行 设置你Web端的密钥
+src="https://webapi.amap.com/maps?v=2.0&key=<Your JsKey>&plugin=AMap.Driving">
+// ./src/stores/GaoDe.js 11行 设置你Web服务的密钥
+const key = ref('<Your Key>')
+```
 
-## Recommended IDE Setup
+###### 项目运行
+```
+npm install
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+npm run dev
+```
+
+###### 线上地址
+https://43.139.219.105/startsbucksmap/
