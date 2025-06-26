@@ -9,7 +9,7 @@ securityJsCode: '<Your SecurityJsCode>'
 // index.html 15行 设置你Web端的密钥
 src="https://webapi.amap.com/maps?v=2.0&key=<Your JsKey>&plugin=AMap.Driving">
 // ./src/stores/GaoDe.js 11行 设置你Web服务的密钥
-const key = ref('<Your Key>')
+const key = ref('Your Key')
 ```
 
 ###### 项目运行
